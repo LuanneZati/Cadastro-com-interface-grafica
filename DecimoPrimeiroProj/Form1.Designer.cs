@@ -40,16 +40,18 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.labelResult = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.labelBirth = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxIdSearch = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.labelResult1 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -67,6 +69,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.labelResult1);
             this.tabPage3.Controls.Add(this.buttonRegister);
             this.tabPage3.Controls.Add(this.textBoxBirth);
             this.tabPage3.Controls.Add(this.textBoxId);
@@ -165,10 +168,11 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.labelResult);
             this.tabPage4.Controls.Add(this.buttonDelete);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.labelBirth);
+            this.tabPage4.Controls.Add(this.labelAge);
+            this.tabPage4.Controls.Add(this.labelName);
             this.tabPage4.Controls.Add(this.buttonSearch);
             this.tabPage4.Controls.Add(this.textBoxIdSearch);
             this.tabPage4.Controls.Add(this.label19);
@@ -183,6 +187,15 @@
             this.tabPage4.Text = "Search User";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelResult.Location = new System.Drawing.Point(379, 25);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(0, 28);
+            this.labelResult.TabIndex = 22;
+            // 
             // buttonDelete
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -194,32 +207,32 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // label16
+            // labelBirth
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(228, 228);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(12, 15);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "-";
+            this.labelBirth.AutoSize = true;
+            this.labelBirth.Location = new System.Drawing.Point(228, 228);
+            this.labelBirth.Name = "labelBirth";
+            this.labelBirth.Size = new System.Drawing.Size(12, 15);
+            this.labelBirth.TabIndex = 20;
+            this.labelBirth.Text = "-";
             // 
-            // label17
+            // labelAge
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(228, 176);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(12, 15);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "-";
+            this.labelAge.AutoSize = true;
+            this.labelAge.Location = new System.Drawing.Point(228, 176);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(12, 15);
+            this.labelAge.TabIndex = 19;
+            this.labelAge.Text = "-";
             // 
-            // label18
+            // labelName
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(228, 130);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(12, 15);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "-";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(228, 130);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(12, 15);
+            this.labelName.TabIndex = 18;
+            this.labelName.Text = "-";
             // 
             // buttonSearch
             // 
@@ -279,6 +292,15 @@
             this.label22.TabIndex = 12;
             this.label22.Text = "Name: ";
             // 
+            // labelResult1
+            // 
+            this.labelResult1.AutoSize = true;
+            this.labelResult1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelResult1.Location = new System.Drawing.Point(390, 25);
+            this.labelResult1.Name = "labelResult1";
+            this.labelResult1.Size = new System.Drawing.Size(0, 28);
+            this.labelResult1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -312,14 +334,16 @@
         private Label label15;
         private TabPage tabPage4;
         private Button buttonDelete;
-        private Label label16;
-        private Label label17;
-        private Label label18;
+        private Label labelBirth;
+        private Label labelAge;
+        private Label labelName;
         private Button buttonSearch;
         private TextBox textBoxIdSearch;
         private Label label19;
         private Label label20;
         private Label label21;
         private Label label22;
+        private Label labelResult;
+        private Label labelResult1;
     }
 }
