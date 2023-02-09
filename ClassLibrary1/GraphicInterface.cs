@@ -71,8 +71,15 @@ namespace ClassLibrary1
                 Console.WriteLine("Exception: " + e.Message);
             }
         }
+        private void clearAuxDataReg(ref PersonRecord x)
+        {
+            x.Name = "";
+            x.Age = 0;
+            x.Id = "";
+            x.Birth = new DateTime();
+        }
         //when starting the program every data in text file are load to list
-        public void LoadData(List<PersonRecord> UserList)
+        public void LoadData(ref List<PersonRecord> UserList)
         {
             try
             {
@@ -86,7 +93,10 @@ namespace ClassLibrary1
                         if (line.Contains(delimiterStart))
                             continue;
                         else if (line.Contains(delimiterEnd))
+                        {
                             UserList.Add(dataReg);
+                            dataReg = new PersonRecord();
+                        }
                         else if (line.Contains(tagName))
                             dataReg.Name = line.Replace(tagName, "");
                         else if (line.Contains(tagAge))
@@ -134,7 +144,7 @@ namespace ClassLibrary1
         {
             List<PersonRecord> UserList = new List<PersonRecord>();
             GraphicInterface x = new GraphicInterface();
-            LoadData(UserList);
+            LoadData(ref UserList);
         }
     }
 }

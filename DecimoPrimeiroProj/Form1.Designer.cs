@@ -30,6 +30,7 @@
         {
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.labelResult1 = new System.Windows.Forms.Label();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.textBoxBirth = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.labelResult1 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -69,6 +69,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.Silver;
             this.tabPage3.Controls.Add(this.labelResult1);
             this.tabPage3.Controls.Add(this.buttonRegister);
             this.tabPage3.Controls.Add(this.textBoxBirth);
@@ -85,7 +86,15 @@
             this.tabPage3.Size = new System.Drawing.Size(798, 408);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Register";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // labelResult1
+            // 
+            this.labelResult1.AutoSize = true;
+            this.labelResult1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelResult1.Location = new System.Drawing.Point(390, 25);
+            this.labelResult1.Name = "labelResult1";
+            this.labelResult1.Size = new System.Drawing.Size(0, 28);
+            this.labelResult1.TabIndex = 27;
             // 
             // buttonRegister
             // 
@@ -168,6 +177,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.Silver;
             this.tabPage4.Controls.Add(this.labelResult);
             this.tabPage4.Controls.Add(this.buttonDelete);
             this.tabPage4.Controls.Add(this.labelBirth);
@@ -185,7 +195,6 @@
             this.tabPage4.Size = new System.Drawing.Size(798, 408);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Search User";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // labelResult
             // 
@@ -291,15 +300,6 @@
             this.label22.Size = new System.Drawing.Size(66, 28);
             this.label22.TabIndex = 12;
             this.label22.Text = "Name: ";
-            // 
-            // labelResult1
-            // 
-            this.labelResult1.AutoSize = true;
-            this.labelResult1.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelResult1.Location = new System.Drawing.Point(390, 25);
-            this.labelResult1.Name = "labelResult1";
-            this.labelResult1.Size = new System.Drawing.Size(0, 28);
-            this.labelResult1.TabIndex = 27;
             // 
             // Form1
             // 

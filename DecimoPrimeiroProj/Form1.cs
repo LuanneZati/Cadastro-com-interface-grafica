@@ -13,7 +13,7 @@ namespace DecimoPrimeiroProj
         public Form1()
         {
             InitializeComponent();
-            graphicInterface.LoadData(UserList);
+            graphicInterface.LoadData(ref UserList);
             t1 = new Thread(new ThreadStart(success));
         }
         private void clearTextBox()
