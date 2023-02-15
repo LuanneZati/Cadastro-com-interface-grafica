@@ -9,7 +9,6 @@ namespace ClassLibrary1
     public class DataBase
     {
         private List<PersonRecord> PersonList;
-
         //Methods
         public void AddPerson(PersonRecord pPerson)
         {

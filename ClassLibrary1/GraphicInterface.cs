@@ -30,8 +30,8 @@ namespace ClassLibrary1
         public GraphicInterface() 
         {
             path = "C:\\Users\\Luanne\\Documents\\C#\\Arquivo texto\\data.txt";
-            delimiterStart = "##### START #####";
-            delimiterEnd = "##### END #####";
+            delimiterStart = "----- START -----";
+            delimiterEnd = "----- END -----";
             tagName = "NAME: ";
             tagAge = "AGE: ";
             tagId = "ID: ";
